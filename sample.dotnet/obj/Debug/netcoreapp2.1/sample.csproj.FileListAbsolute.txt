@@ -1,0 +1,11 @@
+/Users/cbetta/Code/samples-docs-authenticate-with-jwt-api/sample.dotnet/bin/Debug/netcoreapp2.1/sample.deps.json
+/Users/cbetta/Code/samples-docs-authenticate-with-jwt-api/sample.dotnet/bin/Debug/netcoreapp2.1/sample.runtimeconfig.json
+/Users/cbetta/Code/samples-docs-authenticate-with-jwt-api/sample.dotnet/bin/Debug/netcoreapp2.1/sample.runtimeconfig.dev.json
+/Users/cbetta/Code/samples-docs-authenticate-with-jwt-api/sample.dotnet/bin/Debug/netcoreapp2.1/sample.dll
+/Users/cbetta/Code/samples-docs-authenticate-with-jwt-api/sample.dotnet/bin/Debug/netcoreapp2.1/sample.pdb
+/Users/cbetta/Code/samples-docs-authenticate-with-jwt-api/sample.dotnet/obj/Debug/netcoreapp2.1/sample.csprojAssemblyReference.cache
+/Users/cbetta/Code/samples-docs-authenticate-with-jwt-api/sample.dotnet/obj/Debug/netcoreapp2.1/sample.csproj.CoreCompileInputs.cache
+/Users/cbetta/Code/samples-docs-authenticate-with-jwt-api/sample.dotnet/obj/Debug/netcoreapp2.1/sample.AssemblyInfoInputs.cache
+/Users/cbetta/Code/samples-docs-authenticate-with-jwt-api/sample.dotnet/obj/Debug/netcoreapp2.1/sample.AssemblyInfo.cs
+/Users/cbetta/Code/samples-docs-authenticate-with-jwt-api/sample.dotnet/obj/Debug/netcoreapp2.1/sample.dll
+/Users/cbetta/Code/samples-docs-authenticate-with-jwt-api/sample.dotnet/obj/Debug/netcoreapp2.1/sample.pdb
