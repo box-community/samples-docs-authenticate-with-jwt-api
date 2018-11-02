@@ -33,6 +33,10 @@ dotnet run
 # ruby
 gem install jwt
 ruby sample.rb
+
+# php
+composer install
+php sample.php
 ```
 
 ## License
