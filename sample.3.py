@@ -3,10 +3,7 @@ import os
 import time
 import secrets
 import json
-
-from urllib.request import urlopen
-from urllib.request import Request 
-from urllib.parse import urlencode
+import requests
 
 from cryptography.hazmat.backends import default_backend
 from cryptography.hazmat.primitives.serialization import load_pem_private_key
@@ -57,7 +54,7 @@ assertion = jwt.encode(
   }
 )
 
-params = urlencode({
+params = {
   # This specifies that we are using a JWT assertion
   # to authenticate
   'grant_type': 'urn:ietf:params:oauth:grant-type:jwt-bearer',
@@ -66,20 +63,16 @@ params = urlencode({
   # The OAuth 2 client ID and secret
   'client_id': config['boxAppSettings']['clientID'],
   'client_secret': config['boxAppSettings']['clientSecret']
-}).encode()
+}
 
 # Make the request, parse the JSON,
 # and extract the access token
-request = Request(authentication_url, params)
-response = urlopen(request).read()
-access_token = json.loads(response)['access_token']
+response = requests.post(authentication_url, params)
+access_token = response.json()['access_token']
 
+# # Folder 0 is the root folder for this account
+# # and should be empty by default
+headers = { 'Authorization': "Bearer %s" % access_token }
+response = requests.get('https://api.box.com/2.0/folders/0', headers=headers)
 
-# Folder 0 is the root folder for this account
-# and should be empty by default
-request = Request('https://api.box.com/2.0/folders/0', None, {
-  'Authorization': "Bearer %s" % access_token
-})
-response = urlopen(request).read()
-
-print(response)
+print(response.json())

@@ -14,7 +14,7 @@ npm install jsonwebtoken axios
 node sample.js
 
 # python
-pip install pyjwt cryptography
+pip install pyjwt cryptography requests
 python sample.2.py # python 2
 python sample.3.py # python 3
 
