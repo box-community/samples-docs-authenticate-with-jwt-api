@@ -1,3 +1,7 @@
+<img src="images/box-dev-logo-clip.png" 
+alt= “box-dev-logo” 
+style="margin-left:-10px;"
+width=40%;>
 # Samples for "Authenticate with JWT (API)" guide
 
 These are the samples that form the end result of this guide: [Authenticate with JWT (API)](https://developer.box.com/v2.0/docs/construct-jwt-claim-manually).
